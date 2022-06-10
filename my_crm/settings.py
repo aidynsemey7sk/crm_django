@@ -46,16 +46,16 @@ INSTALLED_APPS = [
     "corsheaders",
     'djoser',
 
-    'users',
+    'lead.apps.LeadConfig',
+    # 'users',
 ]
 
-AUTH_USER_MODEL = 'users.CustomUser'
-
-DJOSER = {
-    'SERIALIZERS': {
-         'user_create': 'users.serializers.UserRegistrationSerializer'
-    }
-}
+# REST_FRAMEWORK = {
+#     'DEFAULT_AUTHENTICATION_CLASSES': (
+#         'rest_framework.authentication.TokenAuthentication',
+#     ),
+# }
+# AUTH_USER_MODEL = 'users.CustomUser'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
