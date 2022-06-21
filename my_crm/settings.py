@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'djoser',
 
     'lead.apps.LeadConfig',
-    # 'users',
+    'team.apps.TeamConfig',
 ]
 
 REST_FRAMEWORK = {
